@@ -1,0 +1,29 @@
+{
+    "manifest_version":2,
+    "name":"查询单词",
+    "version":"1.0.0",
+    "description":"简单的广告插件",
+    "icons":{
+        "16":"img/vuejs.png",
+        "48":"img/vuejs.png",
+        "128":"img/vuejs.png"
+    },
+    "browser_action":{
+        "default_icon":"img/vuejs.png",
+        "default_title":"查询单词",
+        "default_popup":"index.html"
+    },
+    "background":{
+        "scripts":["js/jquery.min.js","js/index.js","remove.js"]
+    },
+    "content_scripts":[{
+        "matches":["<all_urls>"],
+        "js":["remove.js","js/jquery.min.js","js/index.js"],
+        "run_at": "document_start"
+    }],
+    "permissions":
+    [
+        "contextMenus"
+    ]
+    
+}

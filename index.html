@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .content{
+            padding-top: 20px;
+            width: 280px;
+            height: 300px;
+            box-sizing: border-box;
+        }
+        .content-input{
+            width: 260px;
+            height: 30px;
+            margin: 0 auto;
+        }
+        .content-input input{
+            width: 260px;
+            height: 30px;
+            border:1px solid black;
+            border-radius: 20px;
+            text-indent: 2em;
+        }
+
+        .content-button{
+            width: 200px;
+            height: 30px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background: red;
+        }
+        .content-button input{
+            width: 200px;
+            height: 30px;
+        }
+
+        .content-den {
+            width: 200px;
+            margin:0 auto;
+            text-align: center;
+            margin-top: 30px;
+            color:green;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+        <div class="content-input">
+            <input type="text" placeholder="请输入单词" id="word">
+        </div>
+            
+        <div class="content-button">
+            <input type="button" value="查询" id="btn">
+        </div>
+
+        <div class="content-den"></div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
